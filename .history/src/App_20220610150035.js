@@ -8,13 +8,12 @@ import {
 import HomePages from "./pages/HomePages.jsx"
 
 function App() {
-  console.log("day la thang lon app")
   return (
     <div >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Wrapper />}>
-            <Route index element={<HomePages />} />
+            <Route path="/home" element={<HomePages />} />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -22,7 +21,7 @@ function App() {
   );
 }
 function Wrapper() {
-  // console.log("day la wraper")
+  console.log("day la wraper")
   return (
     <>
       <h1>day la wraper</h1>

@@ -13,6 +13,7 @@ function App() {
     <div >
       <BrowserRouter>
         <Routes>
+
           <Route path="/" element={<Wrapper />}>
             <Route index element={<HomePages />} />
           </Route>

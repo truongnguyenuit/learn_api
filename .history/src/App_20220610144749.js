@@ -5,16 +5,16 @@ import {
   Route,
   Outlet
 } from "react-router-dom";
-import HomePages from "./pages/HomePages.jsx"
-
+imo
 function App() {
-  console.log("day la thang lon app")
   return (
-    <div >
+    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Wrapper />}>
-            <Route index element={<HomePages />} />
+            <Route index element={<Home />} />
+            <Route path="/u" element={<Home1 />} />
+            <Route path="/y" element={<Home2 />} />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -22,7 +22,7 @@ function App() {
   );
 }
 function Wrapper() {
-  // console.log("day la wraper")
+
   return (
     <>
       <h1>day la wraper</h1>

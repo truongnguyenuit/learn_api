@@ -5,27 +5,27 @@ import {
   Route,
   Outlet
 } from "react-router-dom";
-import HomePages from "./pages/HomePages.jsx"
-
+i,port HomePages from"./pages/HomePages"
 function App() {
-  console.log("day la thang lon app")
   return (
-    <div >
+    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Wrapper />}>
-            <Route index element={<HomePages />} />
+            <Route index element={<Home />} />
+            <Route path="/u" element={<Home1 />} />
+            <Route path="/y" element={<Home2 />} />
           </Route>
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
-function Wrapper() {
-  // console.log("day la wraper")
-  return (
+function Wrapper (){
+
+  return(
     <>
-      <h1>day la wraper</h1>
+    <h1>day la wraper</h1>
       <Outlet />
     </>
   )

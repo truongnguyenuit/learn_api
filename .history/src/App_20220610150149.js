@@ -8,7 +8,6 @@ import {
 import HomePages from "./pages/HomePages.jsx"
 
 function App() {
-  console.log("day la thang lon app")
   return (
     <div >
       <BrowserRouter>
